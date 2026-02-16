@@ -145,5 +145,53 @@ if (investorJump) {
   });
 })();
 
+// Google analytics
+const GA_ID = "G-5LXSV40TXJ";
+
+function loadGA() {
+  if (document.getElementById("ga4-script")) return;
+
+  const s1 = document.createElement("script");
+  s1.id = "ga4-script";
+  s1.async = true;
+  s1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  document.head.appendChild(s1);
+
+  const s2 = document.createElement("script");
+  s2.text = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_ID}', { anonymize_ip: true });
+  `;
+  document.head.appendChild(s2);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const banner = document.getElementById("cookie-banner");
+  const accept = document.getElementById("cookie-accept");
+  const decline = document.getElementById("cookie-decline");
+
+  const consent = localStorage.getItem("cookie_consent");
+
+  if (!consent) {
+    if (banner) banner.style.display = "block";
+  } else if (consent === "accepted") {
+    loadGA();
+  }
+
+  accept?.addEventListener("click", () => {
+    localStorage.setItem("cookie_consent", "accepted");
+    if (banner) banner.style.display = "none";
+    loadGA();
+  });
+
+  decline?.addEventListener("click", () => {
+    localStorage.setItem("cookie_consent", "declined");
+    if (banner) banner.style.display = "none";
+  });
+});
+
+
 
 

@@ -2351,6 +2351,38 @@ html:not(.js) .hero-slide:first-of-type{
   }
 }
 
+.cookie-banner{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  display: none;
+  padding: 16px;
+  background: var(--navy);
+  color: var(--white);
+  border-top: 1px solid rgba(255,255,255,0.18);
+}
+.cookie-inner{
+  width: min(1100px, 96%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.cookie-banner p{
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255,255,255,.92);
+}
+.cookie-buttons{ display: flex; gap: 10px; }
+@media (max-width: 600px){
+  .cookie-inner{ flex-direction: column; align-items: flex-start; }
+}
+
 
 
 
