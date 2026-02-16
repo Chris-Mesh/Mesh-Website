@@ -12,34 +12,34 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LXSV40TXJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5LXSV40TXJ');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LXSV40TXJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5LXSV40TXJ');
+  </script>
 </head>
 
 <body>
   <!-- Utility Contact Bar -->
-<div class="utility-bar">
-  <div class="container utility-inner">
-    <div class="utility-left">
-      <a href="mailto:info@meshbio.com" class="utility-link">
-        ✉ info@mesh.com
-      </a>
-      <a href="tel:+353XXXXXXXXX" class="utility-link">
-        ☎ +353 87 7654 771
-      </a>
-    </div>
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-left">
+        <a href="mailto:info@meshbio.com" class="utility-link">
+          ✉ info@mesh.com
+        </a>
+        <a href="tel:+353XXXXXXXXX" class="utility-link">
+          ☎ +353 87 7654 771
+        </a>
+      </div>
 
-    <div class="utility-right">
-      <span>Industrial AI & Manufacturing Optimisation</span>
+      <div class="utility-right">
+        <span>Industrial AI & Manufacturing Optimisation</span>
+      </div>
     </div>
   </div>
-</div>
+
   <!-- Top event banner (remove the word "active" to hide) -->
   <!-- Top event banner (add the word "active" next to "top-banner" to show) -->
   <div class="top-banner active">
@@ -56,10 +56,10 @@
       </a>
 
       <button class="nav-toggle" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
-      <span class="bar" aria-hidden="true"></span>
-    </button>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
 
-    <nav class="main-nav" id="siteNav" aria-label="Primary">
+      <nav class="main-nav" id="siteNav" aria-label="Primary">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="solutions.html">Solutions</a></li>
@@ -72,32 +72,30 @@
     </div>
   </header>
 
+  <!-- Main content -->
+  <main>
+    <section class="page-hero page-hero--applications" aria-label="Applications hero">
+      <div class="page-hero-bg" style="background-image:url('assets/images/robot.jpg');"></div>
 
-<!-- Main content -->
-<main>
-<section class="page-hero page-hero--applications" aria-label="Applications hero">
-  <div class="page-hero-bg" style="background-image:url('assets/images/robot.jpg');"></div>
+      <div class="container page-hero-inner">
+        <div class="page-hero-card fade-in">
+          <h1>Applications Across Industries</h1>
+          <p>
+            VariControl is an industrial optimisation and traceability platform for high-performance manufacturing —
+            built to improve quality, reduce scrap and energy use, and deliver audit-ready reporting.
+            It adapts to regulated and non-regulated environments alike, and can scale from pilot lines to full production
+            and OEM deployments.
+          </p>
 
-  <div class="container page-hero-inner">
-    <div class="page-hero-card fade-in">
-      <h1>Applications Across Industries</h1>
-      <p>
-        VariControl is an industrial optimisation and traceability platform for high-performance manufacturing —
-        built to improve quality, reduce scrap and energy use, and deliver audit-ready reporting.
-        It adapts to regulated and non-regulated environments alike, and can scale from pilot lines to full production
-        and OEM deployments.
-      </p>
-
-      <div class="hero-chip-row">
-        <span class="hero-chip">Industrial AI</span>
-        <span class="hero-chip">Digital twin</span>
-        <span class="hero-chip">ESG & compliance</span>
-        <span class="hero-chip">OEM-ready</span>
+          <div class="hero-chip-row">
+            <span class="hero-chip">Industrial AI</span>
+            <span class="hero-chip">Digital twin</span>
+            <span class="hero-chip">ESG & compliance</span>
+            <span class="hero-chip">OEM-ready</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <section class="section" id="industries">
       <div class="container">
@@ -272,6 +270,13 @@
             Beyond quality, many manufacturers need structured reporting across compliance, traceability, and sustainability.
             VariControl supports evidence-ready outputs and consistent data capture that can be aligned to your reporting requirements.
           </p>
+
+          <p class="reg-driver">
+            <strong>Regulatory driver:</strong> The EU <strong>Packaging and Packaging Waste Regulation (PPWR)</strong>
+            is accelerating expectations around packaging sustainability, design-for-recycling, and transparent reporting
+            across the value chain. VariControl supports evidence-ready documentation and structured data capture that can
+            help organisations prepare for PPWR-driven reporting requirements.
+          </p>
         </div>
 
         <div class="two-col">
@@ -282,6 +287,7 @@
               <li>Controlled workflows</li>
               <li>Clear audit trail</li>
               <li>Standardised outputs</li>
+              <li>Structured documentation to support compliance-driven reporting (including PPWR-aligned needs)</li>
             </ul>
           </div>
 
@@ -292,6 +298,7 @@
               <li>Yield & scrap tracking</li>
               <li>Energy efficiency insights</li>
               <li>Continuous improvement support</li>
+              <li>Exportable KPIs to support sustainability and packaging reporting targets</li>
             </ul>
           </div>
         </div>
@@ -299,104 +306,106 @@
     </section>
 
     <section class="commitment">
-  <div class="container commitment-inner fade-in">
-    <div>
-      <h2>Tell us your industry — we'll map VariControl to your workflow.</h2>
-      <p>
-        If you're manufacturing in a regulated, energy-intensive, or high-volume environment,
-        we can adapt VariControl to your process, quality targets, and reporting needs.
-      </p>
-    </div>
+      <div class="container commitment-inner fade-in">
+        <div>
+          <h2>Tell us your industry — we'll map VariControl to your workflow.</h2>
+          <p>
+            If you're manufacturing in a regulated, energy-intensive, or high-volume environment,
+            we can adapt VariControl to your process, quality targets, and reporting needs.
+          </p>
+        </div>
 
-    <div class="commitment-cta">
-      <a class="btn-primary" href="contact.html">Get in touch →</a>
-    </div>
-  </div>
-</section>
+        <div class="commitment-cta">
+          <a class="btn-primary" href="contact.html">Get in touch →</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-<!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-inner">
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
 
-    <div class="footer-links">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="solutions.html">Solutions</a></li>
-        <li><a href="technology.html">Technology</a></li>
-        <li><a href="sustainability.html">Sustainability</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-partners">
+        <h4>Partners & Associations</h4>
+
+        <div class="partners-carousel">
+          <div class="partner-slide active"><img src="assets/logos/Partner1.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner2.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner3.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner4.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner5.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner6.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner7.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner8.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner9.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner10.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner11.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner12.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner13.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner14.png" alt="Partner logo"></div>
+          <div class="partner-slide"><img src="assets/logos/Partner15.png" alt="Partner logo"></div>
+        </div>
+      </div>
+
+      <div class="footer-cta">
+        <h4>Get in touch</h4>
+        <p class="footer-small">
+          Questions, partnerships, or product enquiries — we'd love to hear from you.
+        </p>
+
+        <a class="footer-link" href="contact.html">Contact us →</a>
+
+        <div class="footer-divider"></div>
+
+        <p class="footer-small">
+          <strong>Investor enquiries</strong><br>
+          We're open to conversations as we begin our fundraising journey.
+        </p>
+        <a class="footer-link" href="contact.html#investors">Investor contact →</a>
+      </div>
+
     </div>
 
-    <div class="footer-partners">
-      <h4>Partners & Associations</h4>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">
+          © <span id="year"></span> Mesh. All rights reserved.
+        </p>
 
-      <div class="partners-carousel">
-        <div class="partner-slide active"><img src="assets/logos/Partner1.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner2.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner3.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner4.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner5.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner6.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner7.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner8.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner9.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner10.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner11.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner12.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner13.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner14.png" alt="Partner logo"></div>
-        <div class="partner-slide"><img src="assets/logos/Partner15.png" alt="Partner logo"></div>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <div class="footer-cta">
-      <h4>Get in touch</h4>
-      <p class="footer-small">
-        Questions, partnerships, or product enquiries — we'd love to hear from you.
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-inner">
+      <p>
+        We use analytics cookies to understand how visitors use our website.
+        You can accept or decline non-essential cookies.
       </p>
-
-      <a class="footer-link" href="contact.html">Contact us →</a>
-
-      <div class="footer-divider"></div>
-
-      <p class="footer-small">
-        <strong>Investor enquiries</strong><br>
-        We're open to conversations as we begin our fundraising journey.
-      </p>
-      <a class="footer-link" href="contact.html#investors">Investor contact →</a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <div class="container footer-bottom-inner">
-      <p class="footer-copy">
-        © <span id="year"></span> Mesh. All rights reserved.
-      </p>
-
-      <div class="footer-legal">
-        <a href="privacy.html">Privacy</a>
-        <a href="cookies.html">Cookies</a>
+      <div class="cookie-buttons">
+        <button id="cookie-accept" class="btn btn--primary">Accept</button>
+        <button id="cookie-decline" class="btn btn--secondary">Decline</button>
       </div>
     </div>
   </div>
-</footer>
 
   <script src="js/main.js"></script>
-  <div id="cookie-banner" class="cookie-banner">
-  <div class="cookie-inner">
-    <p>
-      We use analytics cookies to understand how visitors use our website.
-      You can accept or decline non-essential cookies.
-    </p>
-    <div class="cookie-buttons">
-      <button id="cookie-accept" class="btn btn--primary">Accept</button>
-      <button id="cookie-decline" class="btn btn--secondary">Decline</button>
-    </div>
-  </div>
-</div>
 </body>
 </html>
