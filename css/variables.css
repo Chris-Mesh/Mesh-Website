@@ -1,0 +1,17 @@
+:root{
+  --navy: #124080;
+  --bg-light: #E2EEFF;
+  --ink: #30668F;
+  --teal: #36929E;
+  --blue-soft: #8CB8CD;
+  --blue-accent: #74CDEB;
+  --white: #FFFFFF;
+
+  --text: #0f172a;
+  --muted: rgba(15,23,42,.7);
+  --border: rgba(15,23,42,.12);
+
+  --radius: 12px;
+  --container: 1200px;
+}
+
