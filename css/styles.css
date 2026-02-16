@@ -2445,6 +2445,19 @@ html:not(.js) .hero-slide:first-of-type{
   }
 }
 
+@media (max-width: 700px){
+  .tech-actions-grid{
+    grid-template-columns: 1fr !important;
+    gap: 80px !important;
+    align-items: stretch;
+  }
+
+  .tech-actions-grid > .tech-card{
+    margin: 0 !important;
+    transform: none !important;
+  }
+}
+
 
 
 
