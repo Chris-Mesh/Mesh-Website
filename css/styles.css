@@ -2407,6 +2407,45 @@ html:not(.js) .hero-slide:first-of-type{
   }
 }
 
+.tech-how-grid,
+.tech-actions-grid,
+.tech-how-card,
+.tech-card {
+  max-width: 100%;
+}
+
+.tech-how-card,
+.tech-card {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media (max-width: 900px){
+  .tech-how-grid{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 900px){
+  .tech-actions-grid{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 700px){
+  .tech-form-row{
+    grid-template-columns: 1fr !important;
+  }
+
+  .tech-submit,
+  .tech-book-btn{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+
 
 
 
