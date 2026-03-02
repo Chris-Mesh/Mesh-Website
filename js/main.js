@@ -192,6 +192,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+(() => {
+  const links = document.querySelectorAll(".nav-list a");
+  if (!links.length) return;
+
+  const current = location.pathname.split("/").pop() || "index.html";
+
+  links.forEach(a => {
+    const href = (a.getAttribute("href") || "").split("/").pop();
+    if (href === current) a.classList.add("is-active");
+  });
+})();
+
 
 
 
