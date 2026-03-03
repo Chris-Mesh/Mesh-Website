@@ -99,48 +99,62 @@
           Tell us what you're working on and we'll get back to you as soon as possible.
         </p>
 
-        <form id="contact-form" class="contact-form" action="#" method="post">
-          <div class="form-row">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" required>
-            </div>
+      <form id="contact-form"
+            class="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/thanks.html">
 
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required>
-            </div>
-          </div>
+        <input type="hidden" name="form-name" value="contact">
 
-          <div class="form-row">
-            <div class="field">
-              <label for="company">Company (optional)</label>
-              <input id="company" name="company" type="text" placeholder="Company / organisation">
-            </div>
+        <!-- Honeypot (spam trap) -->
+        <p class="hidden">
+          <label>Don't fill this out: <input name="bot-field"></label>
+        </p>
 
-            <div class="field">
-              <label for="topic">Topic</label>
-              <select id="topic" name="topic" required>
-                <option value="" selected disabled>Select a topic</option>
-                <option>Partnership / pilot</option>
-                <option>Product enquiry</option>
-                <option>Investor enquiry</option>
-                <option>Press / media</option>
-                <option>Other</option>
-              </select>
-            </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
           </div>
 
           <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="company">Company (optional)</label>
+            <input id="company" name="company" type="text" placeholder="Company / organisation">
           </div>
 
-          <div class="form-actions">
-            <button class="form-btn" type="submit">Send message →</button>
-            <p class="form-note">We'll only use your details to respond to your enquiry.</p>
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="" selected disabled>Select a topic</option>
+              <option value="Partnership / pilot">Partnership / pilot</option>
+              <option value="Product enquiry">Product enquiry</option>
+              <option value="Investor enquiry">Investor enquiry</option>
+              <option value="Press / media">Press / media</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
-        </form>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button class="form-btn" type="submit">Send message →</button>
+          <p class="form-note">We'll only use your details to respond to your enquiry.</p>
+        </div>
+      </form>
       </div>
 
       <aside class="contact-side">

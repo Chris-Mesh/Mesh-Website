@@ -306,38 +306,52 @@
           <h3>Request partnership brief</h3>
           <p>Tell us a bit about your use case — we'll get back to you as soon as possible.</p>
 
-          <form class="tech-form" action="#" method="post">
-            <div class="tech-form-row">
-              <label class="tech-field">
-                <span>Forename</span>
-                <input type="text" name="forename" placeholder="Your name">
-              </label>
+      <form class="tech-form"
+            name="technology-enquiry"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/thanks.html">
 
-              <label class="tech-field">
-                <span>Surname</span>
-                <input type="text" name="surname" placeholder="Your surname">
-              </label>
-            </div>
+        <input type="hidden" name="form-name" value="technology-enquiry">
 
-            <div class="tech-form-row">
-              <label class="tech-field">
-                <span>Email</span>
-                <input type="email" name="email" placeholder="you@example.com">
-              </label>
+        <!-- Honeypot (spam trap) -->
+        <p class="hidden">
+          <label>Don't fill this out: <input name="bot-field"></label>
+        </p>
 
-              <label class="tech-field">
-                <span>Phone</span>
-                <input type="tel" name="phone" placeholder="+353 87 000 0000">
-              </label>
-            </div>
+        <div class="tech-form-row">
+          <label class="tech-field">
+            <span>Forename</span>
+            <input type="text" name="forename" placeholder="Your name" required>
+          </label>
 
-            <label class="tech-field tech-field--full">
-              <span>Message</span>
-              <textarea name="message" rows="4" placeholder="Tell us a bit about your use case, materials, or performance targets..."></textarea>
-            </label>
+          <label class="tech-field">
+            <span>Surname</span>
+            <input type="text" name="surname" placeholder="Your surname" required>
+          </label>
+        </div>
 
-            <button class="tech-submit" type="submit">Send →</button>
-          </form>
+        <div class="tech-form-row">
+          <label class="tech-field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+
+          <label class="tech-field">
+            <span>Phone</span>
+            <input type="tel" name="phone" placeholder="+353 87 000 0000">
+          </label>
+        </div>
+
+        <label class="tech-field tech-field--full">
+          <span>Message</span>
+          <textarea name="message" rows="4"
+            placeholder="Tell us a bit about your use case, materials, or performance targets..." required></textarea>
+        </label>
+
+        <button class="tech-submit" type="submit">Send →</button>
+      </form>
         </div>
 
         <div class="tech-card tech-card--book fade-in fade-delay-1">
