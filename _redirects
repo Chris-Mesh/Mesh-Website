@@ -1,0 +1,4 @@
+/blog/*  /404.html  404
+/post/*  /404.html  404
+/services-*  /404.html  404
+/service-page/*  /404.html  404
