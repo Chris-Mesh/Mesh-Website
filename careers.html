@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Mesh</title>
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/site.webmanifest">
+</head>
+
+<body>
+
+<div class="top-banner active">
+  <div class="container top-banner-inner">
+    <p class="top-banner-text">📅 Meet us at MedTech Expo 2026 - Booth B14</p>
+    <a class="top-banner-link" href="#">Learn more →</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="brand" href="index.html" aria-label="Mesh Bioplastics home">
+      <img 
+        src="assets/images/MeshLogo.png" 
+        alt="Mesh Bioplastics logo"
+        class="site-logo"
+      />
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main class="site-main">
+
+  <section class="careers-hero">
+    <div class="container">
+      <h1>Careers & Future Opportunities</h1>
+
+      <p>
+        We are always interested in hearing from talented people who share our
+        interest in sustainable materials, AI-driven manufacturing,
+        and circular innovation.
+      </p>
+    </div>
+  </section>
+
+<section class="careers-section">
+  <div class="container">
+
+    <div class="careers-intro">
+      <h2>Join our talent pool</h2>
+      <p>
+        If you would like to be considered for future opportunities at Mesh,
+        please submit your details and CV below.
+      </p>
+    </div>
+
+    <div class="career-tags" aria-label="Areas of interest">
+      <span>Material Sciences</span>
+      <span>Sales & Business Development</span>
+      <span>Data Science</span>
+      <span>AI Engineering</span>
+      <span>Electrical Engineering</span>
+      <span>Software Development</span>
+    </div>
+
+  <form 
+  name="careers"
+  method="POST"
+  action="thanks.html"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  enctype="multipart/form-data"
+  class="careers-form careers-form-centered"
+>
+  <input type="hidden" name="form-name" value="careers">
+
+  <p class="hidden">
+    <label>Dont fill this out: <input name="bot-field"></label>
+  </p>
+
+      <div class="form-row">
+        <label>
+          Full Name
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Email Address
+          <input type="email" name="email" required>
+        </label>
+      </div>
+
+      <label>
+        Area of Interest
+        <select name="area" required>
+          <option value="">Select an area</option>
+          <option>Material Sciences</option>
+          <option>Sales & Business Development</option>
+          <option>Data Science</option>
+          <option>AI Engineering</option>
+          <option>Electrical Engineering</option>
+          <option>Software Development</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>
+        Upload CV
+        <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
+      </label>
+
+      <label>
+        Message
+        <textarea 
+          name="message"
+          rows="5"
+          placeholder="Tell us briefly about your background or interest."
+        ></textarea>
+      </label>
+
+      <label class="consent">
+        <input type="checkbox" name="consent" required>
+        <span>
+          I consent to Mesh storing my details and CV
+          for future recruitment opportunities.
+        </span>
+      </label>
+
+      <button type="submit">Submit Application</button>
+    </form>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+
+  <div class="container footer-inner">
+
+    <div class="footer-links">
+      <h4>Explore</h4>
+
+      <ul>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-partners">
+
+      <h4>Partners & Associations</h4>
+
+      <div class="partners-carousel">
+
+        <div class="partner-slide active">
+          <img src="assets/logos/partner1.png" alt="Partner logo">
+        </div>
+
+        <div class="partner-slide">
+          <img src="assets/logos/partner2.png" alt="Partner logo">
+        </div>
+
+        <div class="partner-slide">
+          <img src="assets/logos/partner3.png" alt="Partner logo">
+        </div>
+
+        <div class="partner-slide">
+          <img src="assets/logos/partner4.png" alt="Partner logo">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-cta">
+
+      <h4>Get in touch</h4>
+
+      <p class="footer-small">
+        Questions, partnerships, or product enquiries —
+        we'd love to hear from you.
+      </p>
+
+      <a class="footer-link" href="contact.html">
+        Contact us →
+      </a>
+
+      <div class="footer-divider"></div>
+
+      <p class="footer-small">
+        <strong>Investor enquiries</strong><br>
+        We're open to conversations as we begin our fundraising journey.
+      </p>
+
+      <a class="footer-link" href="contact.html#investors">
+        Investor contact →
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <div class="container footer-bottom-inner">
+
+      <p class="footer-copy">
+        © <span id="year"></span> Mesh Bioplastics. All rights reserved.
+      </p>
+
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Cookies</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
